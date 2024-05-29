@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+body {
+    background-color: rgb(193, 187, 197);
+}
+
+/* background-color: rgba(167, 195, 228, 0.788);
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(138, 120, 151);
+    /* position: sticky;
+    top: 0; */
+}
+
+h1 {
+    font-family: "Press Start 2P", system-ui;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ul li {
+    margin: 10px;
+    list-style: none;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i {
+    color: rgb(87, 51, 122);
+}
+
+a:hover {
+    text-shadow: 3px 4px 5px rgb(90, 102, 152);
+    text-decoration: underline;
+    color: black;
+}
+
+#usericon1 {
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+section h1 {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    color: azure;
+    background-color: rgba(53, 53, 58, 0.13);
+    padding: 10px;
+}
+
+
+
+
+#name-text {
+    border: 3px solid maroon;
+    box-shadow: 3px 4px 5px 6px rgb(27, 26, 26);
+    width: 22%;
+    height: 200px;
+    position: absolute;
+    top: 140%;
+    left: 7%;
+}
+
+#name-text h2 {
+    padding-top: 40px;
+    padding-left: 25px;
+    font-size: 30px;
+}
+
+#name-text span {
+    color: rgba(255, 255, 255, 0.496);
+}
+
+/* section{
+    height: ;
+} */
+
+#aboutme {
+    margin: 20px;
+
+}
+
+#aboutme img {
+    border-radius: 40px;
+}
+
+#about {
+    margin-top: 30px;
+
+}
+
+#about h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#about h2:hover {
+    color: rgb(27, 27, 67);
+
+}
+
+.row {
+    /* border: 1px solid; */
+    padding: 10px;
+    display: flex;
+   
+
+}
+
+.row img {
+    
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.description {
+    margin-top: 30px;
+
+}
+
+.description p{
+    font-size: 20px;
+}
+
+.description h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#about p {
+    text-align: justify;
+    padding: 20px;
+    margin: 15px 20px;
+}
+
+#projects h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -10px;
+
+}
+
+#projects h2:hover {
+    color: rgb(27, 27, 67);
+
+}
+
+h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.col:hover {
+    box-shadow: 4px 5px 6px 7px rgb(65, 61, 61);
+}
+
+.col img {
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.col img:hover {
+    /* width: 330px; */
+    transform: rotate(180deg);
+}
+
+#services h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+#services h2:hover {
+    color: rgb(27, 27, 67);
+
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+
+    /* border: 1px solid; */
+
+}
+
+.col2 {
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to top, rgb(137, 137, 160) 50%, white 50%);
+    transition: all 0.8s;
+    background-size: 100% 200%;
+
+
+
+}
+
+.col2:hover {
+    background-position: bottom;
+}
+
+.col2 p {
+    text-align: justify;
+}
+
+.col2 img {
+    width: 100%;
+}
+
+#contact {
+    margin: 20px;
+}
+
+
+#contact h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+#contact h2:hover {
+    color: rgb(27, 27, 67);
+
+}
+
+#contact input {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#contact textarea {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#contact button {
+    margin-left: 170px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+}
+
+#contact button:hover {
+    background-color: rgb(193, 187, 197);
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media screen and (max-width:400px) {
+    body {
+        width: 400px;
+    }
+
+    header {
+        width: 400px;
+        height:390px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: -50px; */
+    }
+
+    nav ul {
+
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+        
+        
+
+
+    }
+    
+
+    nav ul li a {
+        font-size: 25px;
+       
+    }
+
+
+
+    i {
+        font-size: 15px;
+
+    }
+    #usericon1 {
+        
+       width: 150px;
+       height: 100px;
+       margin-top: 10px;
+       margin-left: 100px;
+    
+    }
+    
+
+
+    section h1 {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        color: azure;
+        background-color: rgba(53, 53, 58, 0.13);
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+    #aboutme{
+        margin: 0; width: 400px;
+    }
+
+    #aboutme img{
+        width: 340px;
+        height: 500px;
+        margin: 15px 25px;
+        border-radius: 5px;
+        border: 5px solid rgba(228, 227, 227, 0.404);
+    }
+
+
+    #name-text {
+        border: 3px solid maroon;
+        box-shadow: 3px 4px 5px 6px rgb(27, 26, 26);
+        width: 25%;
+        height: 150px;
+        position: absolute;
+        top: 140%;
+        left: 12%;
+    }
+    
+    #name-text h2 {
+        padding-top: 20px;
+        padding-left: 15px;
+        font-size: 30px;
+    }
+
+
+    .row{
+        flex-direction: column;
+    }
+    
+
+    .row img{
+        width: 300px;
+        height: 300px;
+        margin-left: 30px;
+        margin-top: 10px;
+        
+    }
+
+    /* .description h3{
+        margin-top: -50px;
+    }
+    */
+
+    .row1{
+        /* display: flex; */
+        flex-direction: column;
+        margin-left: 50px;
+        
+    }
+
+    .col{
+        margin-top: 10px;
+    }
+
+    .row2{
+        flex-direction: column;margin-left: 25px;
+    }
+
+    #contact {
+        margin: 10px;
+    }
+    
+
+    
+    #contact input {
+        width: 280px;
+        
+        
+        
+    }
+    
+    #contact textarea {
+        width: 280px;
+        
+       
+    }
+    
+    #contact button {
+        margin-left: 130px;
+        
+    }
+    
+    
+}
